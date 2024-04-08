@@ -23,6 +23,20 @@ const textVariants = {
   },
 };
 
+const sliderVariants = {
+  initial: {
+    x: 0,
+  },
+  animate: {
+    x: "-600%",
+    transition: {
+      repeat: Infinity,
+      repeatType: "mirror",
+      duration: 20,
+    },
+  },
+};
+
 const Developer = () => {
   return (
     <div className="developer">
@@ -37,7 +51,7 @@ const Developer = () => {
           <motion.h1 variants={textVariants}>Front-End Developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
             <motion.button variants={textVariants}>
-              See the Lates Works
+              See Lates Works
             </motion.button>
             <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
@@ -48,9 +62,14 @@ const Developer = () => {
           ></motion.img> */}
         </motion.div>
       </div>
-      <div className="slidingContainer">
-        Front-End & Full Stack Developer - UI UX Developer
-      </div>
+      <motion.div
+        className="slidingContainer"
+        variants={sliderVariants}
+        initial="initial"
+        animate="animate"
+      >
+        Web Developer Full Stack Developer UI UX Developer
+      </motion.div>
       <div className="imageContainer">
         <motion.img src="/developer.png" />
       </div>
