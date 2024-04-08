@@ -1,4 +1,5 @@
 import "./app.scss";
+import Developer from "./components/developer/Developer";
 
 import Navbar from "./components/navbar/Navbar";
 
@@ -7,6 +8,7 @@ const App = () => {
     <div>
       <section id="Homepage">
         <Navbar />
+        <Developer />
       </section>
       <section id="Services">Parallax</section>
       <section>Services</section>
