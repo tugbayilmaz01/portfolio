@@ -55,11 +55,6 @@ const Developer = () => {
             </motion.button>
             <motion.button variants={textVariants}>Contact Me</motion.button>
           </motion.div>
-          {/*         <motion.img
-            variants={textVariants}
-            animate="scrollButton"
-            src="/scroll.png"
-          ></motion.img> */}
         </motion.div>
       </div>
       <motion.div
