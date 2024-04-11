@@ -66,7 +66,7 @@ const Developer = () => {
         Web Developer Full Stack Developer UI UX Developer
       </motion.div>
       <div className="imageContainer">
-        <motion.img src="/developer.png" />
+        <motion.img src="/assets/images/developer.png" />
       </div>
     </div>
   );
