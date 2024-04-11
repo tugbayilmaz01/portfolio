@@ -15,13 +15,13 @@
     p {
       font-weight: 400;
       font-size: 14px;
-      color: rgb(108, 108, 108);
+      color: lightgray;
       text-align: right;
     }
     hr {
       width: 300px;
       border: none;
-      border-top: 0.5px solid rgb(108, 108, 108);
+      border-top: 0.5px solid lightgray;
     }
   }
 
@@ -65,7 +65,7 @@
 
     .box {
       padding: 50px;
-      border: 0.5px solid rgb(108, 108, 108);
+      border: 0.5px solid lightgray;
       display: flex;
       flex-direction: column;
       justify-content: space-between;

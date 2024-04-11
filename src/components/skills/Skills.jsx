@@ -56,12 +56,18 @@ const Skills = () => {
         <div className="title">
           <img src="/assets/images/people.webp" />
           <h1>
-            <b>Evolving</b> Expertise
+            <motion.b whileHover={{ color: "rgb(94, 126, 169)" }}>
+              Evolving
+            </motion.b>{" "}
+            Expertise
           </h1>
         </div>
         <div className="title">
           <h1>
-            <b>My Diverse</b> Skills.
+            <motion.b whileHover={{ color: "rgb(94, 126, 169)" }}>
+              My Diverse
+            </motion.b>{" "}
+            Skills.
           </h1>
           <button>What skills do I have?</button>
         </div>
