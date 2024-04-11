@@ -10,11 +10,11 @@ const Navbar = () => {
         <div className="social">
           <a href="https://www.linkedin.com/in/tugbayilmaz01/">
             {" "}
-            <img className="png" src="/linkedin.png"></img>{" "}
+            <img className="png" src="/assets/images/linkedin.png"></img>{" "}
           </a>
           <a href="https://github.com/tugbayilmaz01">
             {" "}
-            <img className="png" src="/github.png"></img>{" "}
+            <img className="png" src="/assets/images/github.png"></img>{" "}
           </a>
         </div>
       </div>
