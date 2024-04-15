@@ -20,11 +20,12 @@ const App = () => {
         <Skills />
       </section>
       <section id="Portfolio">
+        {" "}
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
       <section id="Contact">
-        <Contact />{" "}
+        <Contact />
       </section>
     </div>
   );

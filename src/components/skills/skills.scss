@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .skills {
   background: linear-gradient(180deg, #0c0c1d, #111132);
   height: 100%;
@@ -12,6 +14,12 @@
     align-items: center;
     gap: 20px;
 
+    @include mobile {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
     p {
       font-weight: 400;
       font-size: 14px;
@@ -22,6 +30,10 @@
       width: 300px;
       border: none;
       border-top: 0.5px solid lightgray;
+
+      @include mobile {
+        width: 200px;
+      }
     }
   }
 
@@ -29,21 +41,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 2;
+
+    @include mobile {
+      width: 100%;
+    }
     .title {
       display: flex;
       gap: 50px;
       align-items: center;
+
+      @include mobile {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
       img {
         width: 300px;
         height: 100px;
         border-radius: 50px;
         object-fit: cover;
+        @include mobile {
+          width: 200px;
+          height: 50px;
+        }
       }
 
       h1 {
         font-size: 60px;
         font-weight: 100;
+        @include mobile {
+          font-size: 36px;
+        }
+      }
+
+      @include mobile {
+        font-size: 36px;
       }
 
       button {
@@ -54,6 +86,12 @@
         border: none;
         font-size: 24px;
         font-weight: 500;
+
+        @include mobile {
+          font-size: 16px;
+          width: 150px;
+          height: 50px;
+        }
       }
     }
   }
@@ -64,6 +102,11 @@
     margin: auto;
     gap: 16px;
 
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+    }
+
     .box {
       padding: 50px;
       border: 0.5px solid lightgray;
@@ -71,11 +114,33 @@
       flex-direction: column;
       justify-content: space-between;
 
+      @include mobile {
+        border: none;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+      }
+
+      p {
+        @include mobile {
+          display: none;
+        }
+      }
+
       button {
         padding: 10px;
         background-color: rgb(94, 126, 169);
         border: none;
         cursor: pointer;
+
+        @include mobile {
+          background-color: transparent;
+          border: 1px solid rgb(94, 126, 169);
+          border-radius: 5px;
+          color: rgb(94, 126, 169);
+          width: 50%;
+          padding: 5px;
+        }
       }
     }
   }
