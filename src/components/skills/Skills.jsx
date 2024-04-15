@@ -1,5 +1,6 @@
+import { useRef } from "react";
 import "./skills.scss";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const variants = {
   initial: {
@@ -18,32 +19,37 @@ const variants = {
   },
 };
 
-const skills = [
-  {
-    title: "Skill 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  },
-  {
-    title: "Skill 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  },
-  {
-    title: "Skill 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  },
-  {
-    title: "Skill 4",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-  },
-];
-
 const Skills = () => {
+  const ref = useRef();
+
+  const isInView = useInView(ref, { margin: "-100px" });
+
+  const skills = [
+    {
+      title: "Skill 1",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      title: "Skill 2",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      title: "Skill 3",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+    {
+      title: "Skill 4",
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    },
+  ];
+
   return (
     <motion.div
-      className="skills"
+      className="services"
       variants={variants}
       initial="initial"
-      whileInView="animate"
+      ref={ref}
+      animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
@@ -56,20 +62,16 @@ const Skills = () => {
         <div className="title">
           <img src="/assets/images/people.webp" />
           <h1>
-            <motion.b whileHover={{ color: "rgb(94, 126, 169)" }}>
-              Evolving
-            </motion.b>{" "}
+            <motion.b whileHover={{ color: "#5E7EA9" }}>Evolving</motion.b>{" "}
             Expertise
           </h1>
         </div>
         <div className="title">
           <h1>
-            <motion.b whileHover={{ color: "rgb(94, 126, 169)" }}>
-              My Diverse
-            </motion.b>{" "}
+            <motion.b whileHover={{ color: "#5E7EA9" }}> My Diverse</motion.b>{" "}
             Skills.
           </h1>
-          <button>What skills do I have?</button>
+          <button>What Skills Do I have?</button>
         </div>
       </motion.div>
       <motion.div className="listContainer" variants={variants}>

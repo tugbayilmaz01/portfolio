@@ -1,6 +1,5 @@
 @import "../../app.scss";
-
-.skills {
+.services {
   background: linear-gradient(180deg, #0c0c1d, #111132);
   height: 100%;
   display: flex;
@@ -23,21 +22,22 @@
     p {
       font-weight: 400;
       font-size: 14px;
-      color: lightgray;
+      color: gray;
       text-align: right;
     }
+
     hr {
-      width: 300px;
+      width: 500px;
       border: none;
-      border-top: 0.5px solid lightgray;
+      border-top: 0.5px solid gray;
 
       @include mobile {
-        width: 200px;
+        width: 300px;
       }
     }
   }
-
   .titleContainer {
+    flex: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,21 +45,24 @@
     @include mobile {
       width: 100%;
     }
+
     .title {
       display: flex;
-      gap: 50px;
       align-items: center;
+      gap: 50px;
 
       @include mobile {
         flex-direction: column;
         text-align: center;
         gap: 20px;
       }
+
       img {
         width: 300px;
         height: 100px;
         border-radius: 50px;
         object-fit: cover;
+
         @include mobile {
           width: 200px;
           height: 50px;
@@ -67,15 +70,12 @@
       }
 
       h1 {
-        font-size: 60px;
+        font-size: 80px;
         font-weight: 100;
-        @include mobile {
-          font-size: 36px;
-        }
-      }
 
-      @include mobile {
-        font-size: 36px;
+        @include mobile {
+          font-size: 26px;
+        }
       }
 
       button {
@@ -85,10 +85,10 @@
         background-color: rgb(94, 126, 169);
         border: none;
         font-size: 24px;
-        font-weight: 500;
+        cursor: pointer;
 
         @include mobile {
-          font-size: 16px;
+          font-size: 13px;
           width: 150px;
           height: 50px;
         }
@@ -100,7 +100,7 @@
     display: flex;
     max-width: 1200px;
     margin: auto;
-    gap: 16px;
+    gap: 14px;
 
     @include mobile {
       flex-direction: column;
@@ -109,7 +109,7 @@
 
     .box {
       padding: 50px;
-      border: 0.5px solid lightgray;
+      border: 0.5px solid gray;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
