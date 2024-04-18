@@ -26,20 +26,20 @@ const Skills = () => {
 
   const skills = [
     {
-      title: "Skill 1",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "Programming Languages",
+      description: "Python, Java, Typescript, Javascript",
     },
     {
-      title: "Skill 2",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "Front-End Development",
+      description: "HTML, React.js, Vue.js, Tailwind CSS",
     },
     {
-      title: "Skill 3",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "Back-End Development",
+      description: "Node.js, Express.js",
     },
     {
-      title: "Skill 4",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      title: "Database / Tools",
+      description: "MsSQL, Git, VSCode, Scrum",
     },
   ];
 
@@ -83,7 +83,6 @@ const Skills = () => {
           >
             <h2>{skill.title}</h2>
             <p>{skill.description}</p>
-            <button>Go</button>
           </motion.div>
         ))}
       </motion.div>
