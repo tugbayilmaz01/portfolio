@@ -49,12 +49,6 @@ const Developer = () => {
         >
           <motion.h2 variants={textVariants}>Tuğba Yılmaz</motion.h2>
           <motion.h1 variants={textVariants}>Front-End Developer</motion.h1>
-          <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See Lates Works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
-          </motion.div>
         </motion.div>
       </div>
       <motion.div
