@@ -4,6 +4,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import goWealthPic from "../../../public/assets/images/gowealth.png";
 import ibms from "../../../public/assets/images/ibms.png";
 import shellp from "../../../public/assets/images/shellp.png";
+import friendify from "../../../public/assets/images/friendify.png";
 
 const items = [
   {
@@ -24,6 +25,12 @@ const items = [
     title: "Roadmap Based Workspace Application",
     img: shellp,
     desc: "Our group project, which we aim to cover everything from resource recommendations needed by beginners to the software we made with React and Nodejs with the support of TUBITAK 2209-A, from tracking to-do lists and roadmaps to measuring working time.",
+  },
+  {
+    id: 4,
+    title: "Friendify (on-going)",
+    img: friendify,
+    desc: "It's a social media website that I'm still developing. I write with React.js, Node,js and MySQL, which also includes dark & light modes for instant interactions. (message, post, notification, like, etc.)",
   },
 ];
 

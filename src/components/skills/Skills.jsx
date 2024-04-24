@@ -39,7 +39,7 @@ const Skills = () => {
     },
     {
       title: "Database / Tools",
-      description: "MsSQL, Git, VSCode, Scrum",
+      description: "MsSQL, Git, VSCode",
     },
   ];
 
