@@ -37,12 +37,22 @@ const Skills = () => {
     {
       title: "Back-End & Databases",
       description:
-        "Node.js, Express.js, .NET, MySQL (Database Design, SQL), PostgreSQL (Database Design, SQL, EF Core)",
+        "Node.js, Express.js, .NET, MySQL, PostgreSQL (EF Core)",
     },
     {
       title: "Tools & Technologies",
       description:
-        "Git, Jira, Trello, Webpack, Babel, Google Analytics, Google Tag Manager, Playwright, Jest, WebSocket, AI Integration (real-time features & automation)",
+        "Git, Jira, Trello, Webpack, Babel, Google Analytics, Google Tag Manager, Storybook, Sentry, Playwright, Jest",
+    },
+    {
+      title: "AI & Intelligent Systems",
+      description:
+        "Real-time AI Workflows, LLM Integration (OpenAI API), AI-driven Automation, WebSocket Streaming",
+    },
+    {
+      title: "Education & Awards",
+      description:
+        "BS in Computer Engineering, Muğla Sıtkı Koçman University (2019-2024). Google Solution Challenge Global Top 50 Finalist (2021), Tubitak 2209-A Recipient.",
     },
   ];
 
@@ -54,13 +64,6 @@ const Skills = () => {
       ref={ref}
       animate={"animate"}
     >
-      <motion.div className="textContainer" variants={variants}>
-        <p>
-          I pursue my interests, constantly learning
-          <br /> & enhancing my skills to better myself.
-        </p>
-        <hr />
-      </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <img src="/assets/images/people.webp" />
@@ -80,7 +83,6 @@ const Skills = () => {
       <motion.div className="listContainer" variants={variants}>
         {skills.map((skill, index) => (
           <motion.div
-            whileHover={{ background: "lightgray", color: "black" }}
             className="box"
             key={index}
           >

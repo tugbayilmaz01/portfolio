@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
+import Experience from "./components/experience/Experience";
 
 const App = () => {
   return (
@@ -14,18 +15,13 @@ const App = () => {
         <Developer />
       </section>
       <section id="Services">
-        <Parallax type="services" />
-      </section>
-      <section>
         <Skills />
       </section>
-      <section id="Portfolio">
-        {" "}
-        <Parallax type="portfolio" />
+      <section id="Experience">
+        <Experience />
       </section>
       <Portfolio />
       <section id="Contact">
-        {" "}
         <Contact />
       </section>
     </div>

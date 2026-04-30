@@ -49,6 +49,12 @@ const Developer = () => {
         >
           <motion.h2 variants={textVariants}>Tuğba Yılmaz</motion.h2>
           <motion.h1 variants={textVariants}>Full-Stack Developer</motion.h1>
+          <motion.p variants={textVariants} className="profileText">
+            Fullstack Developer with 3 years of experience, specializing in the React and Next.js ecosystem with a solid
+            foundation in Node.js and .NET. Lately, I’ve been focusing on architecting real-time AI-driven
+            features and automating complex workflows using WebSockets—effectively bridging the gap between
+            LLMs and seamless user interfaces.
+          </motion.p>
         </motion.div>
       </div>
       <motion.div
@@ -57,7 +63,7 @@ const Developer = () => {
         initial="initial"
         animate="animate"
       >
-        Web Developer Full Stack Developer UI UX Developer
+        Web Developer Full Stack Developer AI Solutions Cloud Architect
       </motion.div>
       <div className="imageContainer">
         <motion.img src="/assets/images/developer.png" />

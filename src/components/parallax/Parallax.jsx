@@ -22,7 +22,11 @@ const Parallax = ({ type }) => {
       }}
     >
       <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "Skills" : "Projects"}
+        {type === "services"
+          ? "Skills"
+          : type === "experience"
+          ? "Experience"
+          : "Projects"}
       </motion.h1>
 
       <motion.div style={{ x: yBg }} className="stars"></motion.div>

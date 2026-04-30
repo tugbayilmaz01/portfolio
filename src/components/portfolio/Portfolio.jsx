@@ -2,36 +2,22 @@ import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import goWealthPic from "../../../public/assets/images/gowealth.png";
-import ibms from "../../../public/assets/images/ibms.png";
-import shellp from "../../../public/assets/images/shellp.png";
-import resolve from "../../../public/assets/images/resolve.png";
+import wishlistPic from "../../../public/assets/images/wishlist.png";
 
 const items = [
 	{
 		id: 1,
+		title: "WishIt",
+		img: wishlistPic,
+		desc: "WishIt helps you keep track of everything you love while staying on budget. You can organize your wishes into custom categories, plan your shopping by month, and share your lists with friends so they always know exactly what to get you. You can also discover new trends by seeing what others are wishing for.",
+		demoLink: "https://wishlist-frontend-mocha.vercel.app/",
+	},
+	{
+		id: 2,
 		title: "Go Wealth",
 		img: goWealthPic,
 		desc: "This full-stack project, built with React and Node.js, provides money management and income-expense tracking, including effort calculation for purchases.",
 		demoLink: "https://labor-calculation.vercel.app/",
-	},
-	{
-		id: 2,
-		title: "Interview & Bootcamp Management System",
-		img: ibms,
-		desc: "This is a group project we are doing with React.js and Node.js as a graduation project. A project that enables companies to use and manage new employees during and after the recruitment process.",
-	},
-	{
-		id: 3,
-		title: "Roadmap Based Workspace Application",
-		img: shellp,
-		desc: "Our group project, which we aim to cover everything from resource recommendations needed by beginners to the software we made with React and Nodejs with the support of TUBITAK 2209-A, from tracking to-do lists and roadmaps to measuring working time.",
-	},
-	{
-		id: 4,
-		title: "Resolve (on-going)",
-		img: resolve,
-		desc: "The Bug Tracking Platform, written in React, Next.js, and TypeScript, enhances company efficiency by streamlining bug reporting and resolution. It simplifies task management and progress tracking for smoother workflows.",
-		demoLink: "https://resolve-eta.vercel.app/",
 	},
 ];
 
@@ -78,7 +64,7 @@ const Portfolio = () => {
 	});
 
 	return (
-		<div className="portfolio" ref={ref}>
+		<div className="portfolio" ref={ref} id="Portfolio">
 			<div className="progress">
 				<h1>Featured Works</h1>
 				<motion.div style={{ scaleX }} className="progressBar"></motion.div>
